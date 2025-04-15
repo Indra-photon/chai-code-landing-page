@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import Button from './Button';
 import Badge from './Badge';
-import VideoThumb from './VideoEmbed';
+import VideoThumb from './VideoThumb';
 
 const CourseCard = ({ 
   title, 
@@ -16,13 +16,13 @@ const CourseCard = ({
   onBuyClick
 }) => {
   return (
-    <Card className={`flex flex-col h-full ${className}`}>
+    <Card className={`flex flex-col h-full ${className} group`}>
       {videoId && (
         <div className="mb-4 -mx-6 -mt-6">
           <VideoThumb 
             videoId={videoId} 
             title={title} 
-            className="rounded-t-lg rounded-b-none"
+            className="rounded-t-xl rounded-b-none"
           />
         </div>
       )}
@@ -31,7 +31,7 @@ const CourseCard = ({
         <div className="flex items-start justify-between mb-2">
           <h3 className="text-xl font-semibold text-white">{title}</h3>
           {topRated && (
-            <Badge text="Top Rated" className="bg-amber/20 text-amber" />
+            <Badge text="Top Rated" className="bg-cyan-500/20 text-cyan-300" />
           )}
         </div>
         
@@ -43,7 +43,7 @@ const CourseCard = ({
               {[...Array(5)].map((_, i) => (
                 <svg 
                   key={i} 
-                  className={`w-5 h-5 ${i < Math.floor(rating) ? 'text-yellow-400' : 'text-gray-500'}`}
+                  className={`w-5 h-5 ${i < Math.floor(rating) ? 'text-cyan-300' : 'text-gray-600'}`}
                   fill="currentColor" 
                   viewBox="0 0 20 20"
                 >
@@ -64,6 +64,11 @@ const CourseCard = ({
             <Button onClick={onBuyClick}>Buy Now</Button>
           </div>
         )}
+      </div>
+      
+      <div className="absolute inset-x-0 bottom-0">
+        <span className="absolute inset-x-0 bottom-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-[1px] w-3/4 mx-auto"></span>
+        <span className="absolute inset-x-0 bottom-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-[2px] w-3/4 mx-auto blur-sm opacity-0 group-hover:opacity-100 transition-opacity"></span>
       </div>
     </Card>
   );

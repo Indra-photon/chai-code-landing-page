@@ -9,11 +9,12 @@
   
   body {
     @apply bg-black text-white font-sans;
+    background-image: radial-gradient(circle at center, rgba(0, 128, 128, 0.03) 0%, transparent 70%);
   }
   
   /* Custom scrollbar */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   ::-webkit-scrollbar-track {
@@ -21,11 +22,11 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-amber/20 rounded-full;
+    @apply bg-cyan-500/20 rounded-full;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-amber/40;
+    @apply bg-cyan-500/40;
   }
 }
 
@@ -41,5 +42,48 @@
   .side-text {
     @apply absolute -left-16 top-1/2 -translate-y-1/2 text-sm text-text-muted uppercase tracking-widest rotate-90 origin-left;
     opacity: 0.4;
+  }
+  
+  .glow-border {
+    position: relative;
+  }
+  
+  .glow-border::after {
+    content: '';
+    position: absolute;
+    inset-x: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, theme('colors.cyan.500'), transparent);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .glow-border::before {
+    content: '';
+    position: absolute;
+    inset-x: 0;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, theme('colors.cyan.500'), transparent);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: blur(3px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .glow-border:hover::before {
+    opacity: 1;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 8px theme('colors.cyan.500');
+  }
+  
+  .cyan-gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500;
   }
 }
