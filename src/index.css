@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white font-sans;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-amber/20 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-amber/40;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2;
+  }
+  
+  .section-subheading {
+    @apply text-lg text-text-secondary mb-8 max-w-3xl;
+  }
+  
+  .side-text {
+    @apply absolute -left-16 top-1/2 -translate-y-1/2 text-sm text-text-muted uppercase tracking-widest rotate-90 origin-left;
+    opacity: 0.4;
+  }
+}
