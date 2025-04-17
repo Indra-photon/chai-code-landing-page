@@ -47,7 +47,7 @@ const Button = ({
   
   const variantClasses = {
     primary: 'bg-amber text-black hover:brightness-110 hover:scale-105 focus:ring-amber',
-    secondary: 'text-white bg-slate-700 hover:bg-amber/10 px-8 hover:text-cyan-300 focus:ring-cyan-500',
+    secondary: 'px-8 py-3 bg-gradient-to-r from-cyan-200 to-cyan-600 hover:bg-cyan-500/100 text-black font-semibold rounded-full transition',
     outline: 'border border-subtle text-white hover:border-cyan-500 hover:text-cyan-300 focus:ring-cyan-500',
   };
 

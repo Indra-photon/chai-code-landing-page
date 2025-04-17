@@ -29,11 +29,16 @@ export default {
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
+        'rotate': 'rotate 10s linear infinite',
       },
       keyframes: {
         glow: {
           '0%': { 'text-shadow': '0 0 5px #06B6D4, 0 0 10px #06B6D4' },
           '100%': { 'text-shadow': '0 0 10px #06B6D4, 0 0 20px #06B6D4, 0 0 30px #06B6D4' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg) scale(10)' },
+          '100%': { transform: 'rotate(-360deg) scale(10)' },
         },
       },
     },
