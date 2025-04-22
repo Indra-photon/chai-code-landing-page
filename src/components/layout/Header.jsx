@@ -30,7 +30,7 @@ const Header = () => {
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white backdrop-blur-md shadow-lg' 
+          ? 'bg-black/30 backdrop-blur-md shadow-lg' 
           : 'bg-black/30 backdrop-blur-sm'
       }`}
     >

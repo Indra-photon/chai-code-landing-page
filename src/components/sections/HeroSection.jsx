@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '../layout/Container';
 import Button from '../common/Button';
 import VideoEmbed from '../common/VideoEmbed';
+import YouTube from 'react-youtube';
 
 const HeroSection = () => {
     // Feature tags for the hero section
@@ -14,7 +15,7 @@ const HeroSection = () => {
     ];
   
     return (
-      <section className="pt-16 pb-20 relative overflow-hidden">
+      <section className="pt-16 pb-10 relative overflow-hidden">
         {/* Side Text */}
         <div className="side-text">Why us</div>
         
@@ -63,7 +64,7 @@ const HeroSection = () => {
             {/* CTA Button */}
             <div className="mb-16 flex justify-center">        
               <div className="relative w-full h-full rounded-full overflow-hidden flex items-center justify-center p-[2px]">                 
-                <div className="animate-rotate absolute inset-0 h-full w-full rounded-full z-0 bg-[conic-gradient(#22d3ee_20deg,transparent_120deg)]" />
+                <div className="animate-rotate absolute inset-0 h-full w-full rounded-full z-0 bg-[conic-gradient(#FFFFFF_20deg,transparent_120deg)]" />
 
                 {/* Button sits on top */}
                 <Button variant="secondary" className="relative z-10">
@@ -74,11 +75,9 @@ const HeroSection = () => {
 
             
             {/* Video Embed */}
-            <div className="w-full max-w-4xl">
-              <VideoEmbed 
-                videoId="zg06ec5arCs" 
-                title="GenAI for developers cohort launch"
-                className="rounded-2xl shadow-2xl shadow-amber/10 border border-slate-700"
+            <div className="w-full max-w-4xl flex justify-center mb-12">
+              <YouTube
+                videoId='zg06ec5arCs'
               />
             </div>
           </div>
