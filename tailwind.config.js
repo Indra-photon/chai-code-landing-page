@@ -30,6 +30,7 @@ export default {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
         'rotate': 'rotate 10s linear infinite',
+        'marquee': 'marquee 30s linear infinite',
       },
       keyframes: {
         glow: {
@@ -39,6 +40,10 @@ export default {
         rotate: {
           '0%': { transform: 'rotate(0deg) scale(10)' },
           '100%': { transform: 'rotate(-360deg) scale(10)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },

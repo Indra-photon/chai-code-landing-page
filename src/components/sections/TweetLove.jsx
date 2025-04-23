@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '../layout/Container';
 import Button from '../common/Button';
 import Card from '../common/Card';
-import TweetEmbed from 'react-tweet-embed';
 import { Tweet } from 'react-tweet'
 
 const TweetCard = ({ tweetId }) => {
@@ -33,15 +32,14 @@ const TweetLove = () => {
       
       <Container className="relative z-10">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8">
-          Love that we get from <span className='text-cyan-300'>our community</span>
-          </h2>
-          <h2 className="section-heading mb-4">Tweet Love</h2>
-          
-          <div className="relative h-1 w-1/4 mb-8">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm"></div>
-          </div>
+        <h2 className="section-heading mb-4">Tweet Love</h2>
+        <div className="relative h-1 w-1/4 mb-8">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm"></div>
+        </div>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-8">
+        Love that we get from <span className='text-cyan-300'>our community</span>
+        </h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mb-10 place-items-center">
