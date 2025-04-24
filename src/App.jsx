@@ -5,6 +5,7 @@ import Cohorts from './components/sections/Cohorts'
 import CompanyLogos from './components/sections/CompanyLogos'
 import HeroSection from './components/sections/HeroSection'
 import TweetLove from './components/sections/TweetLove'
+import UdemyCourses from './components/sections/UdemyCourses'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <TweetLove />
       <CompanyLogos/>
       <Cohorts />
+      <UdemyCourses />
     </>
   )
 }
