@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from '../layout/Container';
 import Button from '../common/Button';
-import VideoEmbed from '../common/VideoEmbed';
 import YouTube from 'react-youtube';
 
 const HeroSection = () => {
@@ -51,7 +50,7 @@ const HeroSection = () => {
               {features.map((feature) => (
                 <div 
                   key={feature.name}
-                  className="flex items-center bg-gradient-to-r from-cyan-600 to-cyan-900 rounded-full px-4 py-2 border border-white relative"
+                  className="flex items-center rounded-full px-4 py-2 border border-white relative"
                 >
                   <span className="mr-2">{feature.icon}</span>
                   <span className="text-white">{feature.name}</span>
