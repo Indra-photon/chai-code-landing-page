@@ -7,6 +7,7 @@ import HeroSection from './components/sections/HeroSection'
 import TweetLove from './components/sections/TweetLove'
 import UdemyCourses from './components/sections/UdemyCourses'
 import KeyBenefits from './components/sections/KeyBenefits'
+import AlumniNetwork from './components/sections/AlumniNetwork'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Cohorts />
       <UdemyCourses />
       <KeyBenefits />
+      <AlumniNetwork />
     </>
   )
 }
