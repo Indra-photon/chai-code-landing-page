@@ -8,6 +8,7 @@ import TweetLove from './components/sections/TweetLove'
 import UdemyCourses from './components/sections/UdemyCourses'
 import KeyBenefits from './components/sections/KeyBenefits'
 import AlumniNetwork from './components/sections/AlumniNetwork'
+import WhyChaiCode from './components/sections/WhyChaiCode'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <UdemyCourses />
       <KeyBenefits />
       <AlumniNetwork />
+      <WhyChaiCode />
     </>
   )
 }

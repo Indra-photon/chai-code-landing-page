@@ -110,8 +110,8 @@ const AlumniNetwork = () => {
           
           {/* Right side - Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">
-              Alumni Network and job listings
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <span className='text-cyan-300'>Alumni Network</span> and <span className='text-cyan-300'>Job Listings</span>
             </h2>
             
             
