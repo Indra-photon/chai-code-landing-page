@@ -190,9 +190,9 @@ const WhyChaiCode = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm"></div>
           </div>
           
-          <p className="text-xl text-text-secondary">
-            ChaiCode exists because we love tech and teaching
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <span className='text-cyan-300'>ChaiCode</span> exists because we love <span className='text-cyan-300'>Tech</span> and <span className='text-cyan-300'>Teaching</span>
+          </h2>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">

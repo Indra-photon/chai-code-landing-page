@@ -50,7 +50,12 @@ const HeroSection = () => {
               {features.map((feature) => (
                 <div 
                   key={feature.name}
-                  className="flex items-center rounded-full px-4 py-2 border border-white relative"
+                  className="flex items-center rounded-full px-4 py-2 border border-white relative 
+                    hover:shadow-lg group
+                    before:absolute before:inset-0 before:bg-gradient-to-r 
+                    before:from-cyan-500/20 before:via-cyan-500/40 before:to-cyan-500/20 
+                    before:rounded-lg before:opacity-0 hover:before:opacity-100
+                    before:transition-opacity before:duration-300"
                 >
                   <span className="mr-2">{feature.icon}</span>
                   <span className="text-white">{feature.name}</span>
