@@ -67,7 +67,7 @@ const FreeAPI = () => {
           {/* Right side - Video Card */}
           <div className="flex justify-center">
             <Card className="w-full overflow-hidden">
-              <div className="p-6 flex flex-col">
+              <div className="sm:p-6 flex flex-col">
                 
                 <div className="aspect-video w-full">
                   <YouTube

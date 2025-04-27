@@ -12,6 +12,8 @@ import WhyChaiCode from './components/sections/WhyChaiCode'
 import TopicsCloud from './components/sections/TopicsCloud'
 import Community from './components/sections/Community'
 import FreeAPI from './components/sections/FreeAPI'
+import MobileAppSection from './components/sections/MobileAppSection'
+import Footer from './components/layout/Footer'
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
       <TopicsCloud />
       <Community />
       <FreeAPI />
+      <MobileAppSection />
+      <Footer />
     </>
   )
 }
