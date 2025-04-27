@@ -10,6 +10,8 @@ import KeyBenefits from './components/sections/KeyBenefits'
 import AlumniNetwork from './components/sections/AlumniNetwork'
 import WhyChaiCode from './components/sections/WhyChaiCode'
 import TopicsCloud from './components/sections/TopicsCloud'
+import Community from './components/sections/Community'
+import FreeAPI from './components/sections/FreeAPI'
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
       <AlumniNetwork />
       <WhyChaiCode />
       <TopicsCloud />
+      <Community />
+      <FreeAPI />
     </>
   )
 }
