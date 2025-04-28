@@ -12,7 +12,7 @@ const Cohorts = () => {
       price: '6,999',
       originalPrice: '8,999',
       discount: 22,
-      videoId: 'zg06ec5arCs',
+      videoId: 'Kjd-SWpe1do',
       isLive: true,
       startDate: 'April 12, 2025',
       duration: '6 months',
@@ -27,7 +27,7 @@ const Cohorts = () => {
       price: '4,999',
       originalPrice: '7,999',
       discount: 38,
-      videoId: 'zg06ec5arCs',
+      videoId: 'VNb_LawBBWU',
       isLive: true,
       startDate: 'April 7, 2025',
       duration: '1-2 months',
@@ -42,7 +42,7 @@ const Cohorts = () => {
       price: '4,999',
       originalPrice: '7,999',
       discount: 38,
-      videoId: 'zg06ec5arCs',
+      videoId: 'oBLpqSHc3lA',
       isLive: true,
       startDate: 'April 15, 2025',
       duration: '1-2 months',
@@ -57,7 +57,7 @@ const Cohorts = () => {
       price: '6,999',
       originalPrice: '8,999',
       discount: 22,
-      videoId: 'zg06ec5arCs',
+      videoId: 'yG8JMlldoCE',
       isLive: true,
       startDate: 'January 11, 2025',
       duration: '6 months',
@@ -72,7 +72,7 @@ const Cohorts = () => {
       price: '299',
       originalPrice: '599',
       discount: 50,
-      videoId: 'zg06ec5arCs',
+      videoId: 'KzptgbkiB1M',
       isLive: true,
       startDate: 'Constantly going',
       duration: 'Always running',
@@ -83,7 +83,8 @@ const Cohorts = () => {
   ];
 
   return (
-    <section id="cohorts" className="py-16 relative overflow-hidden">
+    <Container>
+      <section id="cohorts" className="py-16 relative overflow-hidden">
       <div className="side-text">Cohorts</div>
       <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-amber/5 rounded-full blur-3xl -z-10"></div>
       
@@ -125,6 +126,7 @@ const Cohorts = () => {
         </div>
    
     </section>
+    </Container>
   );
 };
 

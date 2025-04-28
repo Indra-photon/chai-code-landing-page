@@ -222,7 +222,7 @@ const WhyChaiCode = () => {
             <Card className="h-full flex flex-col items-center text-center p-6">
               <div className="rounded-lg overflow-hidden mb-4 w-full aspect-video">
                 <img 
-                  src="https://via.placeholder.com/400x300" 
+                  src="https://pbs.twimg.com/profile_images/1724344976715468800/MasktpKz_400x400.jpg" 
                   alt="Hitesh Choudhary" 
                   className="w-full h-full object-cover"
                 />
@@ -240,11 +240,11 @@ const WhyChaiCode = () => {
                   Project based courses with peer learning and bouties with many activities
                 </p>
                 
-                <div className="flex justify-center space-x-3">
+                {/* <div className="flex justify-center space-x-3">
                   <div className="w-8 h-8 bg-slate-700 rounded-md"></div>
                   <div className="w-8 h-8 bg-slate-700 rounded-md"></div>
                   <div className="w-8 h-8 bg-slate-700 rounded-md"></div>
-                </div>
+                </div> */}
               </div>
             </Card>
           </div>

@@ -14,6 +14,7 @@ import Community from './components/sections/Community'
 import FreeAPI from './components/sections/FreeAPI'
 import MobileAppSection from './components/sections/MobileAppSection'
 import Footer from './components/layout/Footer'
+import CommunityShowcase from '../src/CommunityShowcase/CommunityShowcase'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <TrustBadge />
       <HeroSection/>
+      <CommunityShowcase />
       <TweetLove />
       <CompanyLogos/>
       <Cohorts />

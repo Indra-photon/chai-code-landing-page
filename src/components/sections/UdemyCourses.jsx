@@ -19,7 +19,7 @@ const UdemyCourses = () => {
       price: 499,
       originalPrice: 3499,
       discount: 86,
-      videoId: 'zg06ec5arCs'
+      videoId: 'KZ31wDjYleI'
     },
     {
       id: 2,
