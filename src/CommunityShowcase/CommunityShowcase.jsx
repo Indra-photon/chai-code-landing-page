@@ -6,12 +6,13 @@ import pic2 from '../assets/booklove.webp';
 import pic3 from '../assets/bounties.webp';
 import pic4 from '../assets/groupprojects.webp';
 import pic5 from '../assets/hostel.webp';
+import pic6 from '../assets/latework.webp';
 
 // Placeholder for community images - replace with your actual images
 const communityImages = [
   {
     id: 1,
-    src: pic5,
+    src: pic6,
     alt: 'Coding workshop session',
     caption: 'Learning together in our virtual coding hostel',
     category: 'workshop'
@@ -120,7 +121,7 @@ const CommunityShowcase = () => {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            <div className="main-slide-container">
+            <div className="main-slide-container border-cyan-300 border-2">
               {communityImages.map((image, index) => (
                 <div 
                   key={image.id}
