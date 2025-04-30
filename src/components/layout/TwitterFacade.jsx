@@ -71,10 +71,10 @@ const TwitterFacade = ({ tweetId, className = "" }) => {
   }, [tweetId]); 
 
   return (
-    <div className={`twitter-facade ${className} rounded-xl overflow-hidden bg-[#15202b] border border-[#38444d] relative`}
+    <div className={`twitter-facade ${className} rounded-xl overflow-hidden relative`}
     >
       {isLoading && (
-        <diV className='flex-col justify-center items-center h-full w-full'>
+        <div className='flex-col justify-center items-center h-full w-full'>
           <div className="text-center text-white text-base font-medium w-full p-2">
             <span>Loading tweet...</span>
           </div>
@@ -83,7 +83,7 @@ const TwitterFacade = ({ tweetId, className = "" }) => {
               className="loading-spinner w-5 h-5 border-4 border-[rgba(29,155,240,0.2)] border-t-[#1d9bf0] rounded-full animate-spin mb-4"
             ></div>
           </div>
-        </diV>
+        </div>
       )}
 
         <div 

@@ -45,10 +45,9 @@ const YouTubeChannelsSection = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm"></div>
           </div>
-          
-          <p className="text-xl text-text-secondary mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-8">
             Follow our channels for free learning resources.
-          </p>
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

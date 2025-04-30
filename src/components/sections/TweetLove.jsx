@@ -129,7 +129,7 @@ import TwitterFacade from '../layout/TwitterFacade';
 
 const TweetCard = ({ tweetId }) => {
   return (
-    <Card className="h-full">
+    <Card>
       <div className="p-4">
         <TwitterFacade 
           tweetId={tweetId}
@@ -143,6 +143,7 @@ const TweetLove = () => {
   // Define actual tweet IDs - make sure these are strings
   const tweetIds = [
     '1907045909394788416',
+    '1905574126112153860',
     '1905574126112153860',
     '1905574126112153860',
   ];
@@ -167,7 +168,7 @@ const TweetLove = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1 mb-10 place-items-center">
           {tweetIds.map((tweetId, index) => (
             <TweetCard key={index} tweetId={tweetId} />
           ))}

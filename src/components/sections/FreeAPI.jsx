@@ -22,7 +22,7 @@ const FreeAPI = () => {
               FreeAPI - Open Source
             </h2>
             
-            <div className="relative h-1 w-1/2 mb-6">
+            <div className="relative h-1 w-full sm:w-4/5 mb-6">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm"></div>
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({ children, className = '', onClick, hover = true }) => {
   return (
     <div 
-      className={`bg-slate-800 border border-slate-700 rounded-xl p-6 
+      className={`bg-slate-800 border border-slate-700 rounded-xl p-1
       ${hover ? 'transition-all duration-300 hover:scale-[1.02] hover:shadow-lg relative overflow-hidden' : ''}
       ${onClick ? 'cursor-pointer' : ''}
       ${className}`}
