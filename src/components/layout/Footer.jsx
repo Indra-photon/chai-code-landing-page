@@ -60,22 +60,6 @@ const Footer = () => {
                 making learning fun and accessible through innovative cohort-based 
                 programs, peer learning, and real-world projects.
               </p>
-              
-              {/* Contact information */}
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <MapPin className="w-5 h-5 text-cyan-300 mr-3" />
-                  <span className="text-text-secondary">Bengaluru, Karnataka, India</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-cyan-300 mr-3" />
-                  <span className="text-text-secondary">hello@chaicode.com</span>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-cyan-300 mr-3" />
-                  <span className="text-text-secondary">+91 12345 67890</span>
-                </div>
-              </div>
             </div>
             
             {/* Quick links */}
