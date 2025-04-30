@@ -22,7 +22,7 @@ const Header = () => {
   const navigation = [
     { name: 'Cohorts', href: '#cohorts', id: 'cohorts' },
     { name: 'Udemy', href: '#udemy', id: 'udemy' },
-    { name: 'Docs', href: '#docs', id: 'docs' },
+    { name: 'Docs', href: 'https://docs.chaicode.com/', id: 'docs' },
     { name: 'Reviews', href: '#reviews', id: 'reviews' },
   ];
 

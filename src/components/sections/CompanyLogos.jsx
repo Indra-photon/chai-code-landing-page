@@ -33,7 +33,10 @@ const CompanyLogos = () => {
   return (
     <section className="py-16 bg-black relative overflow-hidden">
       <Container>
-        <div className="flex flex-col items-center text-center mb-12">
+        <div className="flex flex-col items-center text-center mb-12 before:absolute before:inset-0 before:bg-gradient-to-r 
+      before:from-transparent before:via-cyan-500/20 before:to-transparent
+      before:opacity-0 hover:before:opacity-100
+      before:transition-opacity before:duration-300">
             <h2 className="section-heading mb-4">Our Students in <span className='text-cyan-300'>Big Tech Companies</span></h2>
             <div className="relative h-1 w-1/2 mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>

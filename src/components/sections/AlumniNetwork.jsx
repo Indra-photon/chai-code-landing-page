@@ -34,7 +34,10 @@ const AlumniNetwork = () => {
       <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-cyan-500/5 rounded-full blur-3xl -z-10"></div>
       
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center before:absolute before:inset-0 before:bg-gradient-to-r 
+      before:from-transparent before:via-cyan-500/20 before:to-transparent
+      before:opacity-0 hover:before:opacity-100
+      before:transition-opacity before:duration-300">
           {/* Right side - Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

@@ -36,7 +36,7 @@ const YouTubeChannelsSection = () => {
       <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-cyan-500/5 rounded-full blur-3xl -z-10"></div>
       
       <Container>
-        <div className="flex flex-col items-center text-center mb-12">
+        <div className="flex flex-col items-center mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             Explore Our Engaging <span className='text-cyan-300'>YouTube Channels</span>
           </h2>
@@ -50,7 +50,10 @@ const YouTubeChannelsSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 before:absolute before:inset-0 before:bg-gradient-to-r 
+      before:from-transparent before:via-cyan-500/20 before:to-transparent
+      before:opacity-0 hover:before:opacity-100
+      before:transition-opacity before:duration-300">
           {channels.map(channel => (
             <div 
               key={channel.id} 

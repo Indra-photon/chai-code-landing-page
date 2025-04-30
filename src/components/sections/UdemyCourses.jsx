@@ -89,7 +89,10 @@ const UdemyCourses = () => {
       <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-cyan-500/5 rounded-full blur-3xl -z-10"></div>
       
       <Container className="relative z-10">
-        <div className="flex flex-col items-center text-center mb-12">
+        <div className="flex flex-col items-center text-center mb-12 before:absolute before:inset-0 before:bg-gradient-to-r 
+      before:from-transparent before:via-cyan-500/20 before:to-transparent
+      before:opacity-0 hover:before:opacity-100
+      before:transition-opacity before:duration-300">
           <h2 className="section-heading mb-4">Our Courses on Udemy</h2>
           
           <div className="relative h-1 w-full sm:w-4/5 mb-6">

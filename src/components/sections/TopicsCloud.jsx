@@ -3,23 +3,27 @@ import Container from '../layout/Container';
 
 const TopicsCloud = () => {
   const topics = [
-    { name: 'Docker', href: '#docker', row: 1 },
-    { name: 'MCP Server', href: '#mcp-server', row: 1 },
-    { name: 'Kubernetes', href: '#kubernetes', row: 1 },
-    { name: 'Python', href: '#python', row: 1 },
-    { name: 'React Native', href: '#react-native', row: 1 },
-    { name: 'Django', href: '#django', row: 1 },
-    { name: 'NextJS', href: '#nextjs', row: 1 },
-    { name: 'NextJS', href: '#nextjs', row: 1 },
-    { name: 'NextJS', href: '#nextjs', row: 1 },
-    { name: 'NextJS', href: '#nextjs', row: 1 },
-    { name: 'NextJS', href: '#nextjs', row: 1 }
+    { name: 'Docker', href: 'https://youtu.be/rr9cI4u1_88?si=_WfwYYh0vIOwggIS', row: 1 },
+    { name: 'MCP Server', href: 'https://youtu.be/dZyQNy3-HjU?si=UnCVORUe7NGGeHNb', row: 1 },
+    { name: 'Kubernetes', href: 'https://youtu.be/hJw8Sy13Vp8?si=dFpmj7cUThLFaZWZ', row: 1 },
+    { name: 'Python', href: 'https://youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&si=rdwShTmlgLAklZQf', row: 1 },
+    { name: 'React Native', href: 'https://youtube.com/playlist?list=PLRAV69dS1uWSjBBJ-egNNOd4mdblt1P4c&si=v1DWQ7p8Yh7P-GgR', row: 1 },
+    { name: 'Django', href: 'https://youtube.com/playlist?list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy&si=SCzalJCkOKG6OjTx', row: 1 },
+    { name: 'NextJS', href: 'https://youtube.com/playlist?list=PLRAV69dS1uWR7KF-zV6YPYtKYEHENETyE&si=OOYjVlW2aELxs7Bd', row: 1 },
+    { name: 'Prisma', href: 'https://youtu.be/PWs6gFmjDyo?si=T674VvWJ-l8t8-df', row: 1 },
+    { name: 'Clerk', href: 'https://youtu.be/FQCTzomz6bw?si=vlqqHUK1cj4dLLJw', row: 1 },
+    { name: 'System Design', href: 'https://youtu.be/VJVfWWdtJ4c?si=tIWJuM4qG5Qb2o1x', row: 1 },
+    { name: 'Streamlite', href: 'https://youtu.be/yKTEC1Y5bEQ?si=jQMq12lC6844UTMj', row: 1 },
+    { name: 'FastAPi', href: 'https://youtu.be/foGklduxhM0?si=j3bO54fEjX57HJMt', row: 1 }
   ];
 
   return (
     <section className="py-16 relative overflow-hidden">
       <Container>
-        <div className="flex flex-col items-center text-center mb-2">
+        <div className="flex flex-col items-center text-center mb-2 before:absolute before:inset-0 before:bg-gradient-to-r 
+      before:from-transparent before:via-cyan-500/20 before:to-transparent
+      before:opacity-0 hover:before:opacity-100
+      before:transition-opacity before:duration-300">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Topics Cloud
           </h2>

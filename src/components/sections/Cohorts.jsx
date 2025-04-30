@@ -84,7 +84,10 @@ const Cohorts = () => {
 
   return (
     <Container>
-      <section id="cohorts" className="py-16 relative overflow-hidden">
+      <section id="cohorts" className="py-16 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r 
+      before:from-transparent before:via-cyan-500/20 before:to-transparent
+      before:opacity-0 hover:before:opacity-100
+      before:transition-opacity before:duration-300">
       <div className="side-text">Cohorts</div>
       <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-amber/5 rounded-full blur-3xl -z-10"></div>
       
