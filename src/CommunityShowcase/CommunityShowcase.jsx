@@ -117,7 +117,10 @@ const CommunityShowcase = () => {
   }, [activeIndex, isTransitioning]);
   
   return (
-    <section className="community-showcase py-16 relative overflow-hidden">
+    <section className="community-showcase py-16 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r 
+      before:from-transparent before:via-cyan-500/20 before:to-transparent
+      before:opacity-0 hover:before:opacity-100
+      before:transition-opacity before:duration-300">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="absolute top-10 left-10 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl"></div>
@@ -134,10 +137,10 @@ const CommunityShowcase = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm"></div>
           </div>
-          
-          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-            See our vibrant community in action and the experiences they share
-          </p>
+
+          <h2 className="text-2xl md:text-3xl font-semibold mb-8">
+           See our vibrant community in action and the experiences they share
+          </h2>
         </div>
         
         <div className="showcase-wrapper relative max-w-4xl mx-auto">
