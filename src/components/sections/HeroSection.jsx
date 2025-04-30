@@ -70,12 +70,12 @@ const HeroSection = () => {
             {/* CTA Button */}
             <div className="mb-8 flex justify-center">        
               <div className="relative w-full h-full rounded-full overflow-hidden flex items-center justify-center p-[2px]">                 
-                <div className="animate-rotate absolute inset-0 h-full w-full rounded-full z-0 bg-[conic-gradient(#FFFFFF_20deg,transparent_120deg)]" />
 
-                {/* Button sits on top */}
+              <a href='/#cohorts'>
                 <Button variant="secondary" className="relative z-10">
                   Check all Live Cohorts
                 </Button>
+              </a>
               </div>
             </div>
           </div>

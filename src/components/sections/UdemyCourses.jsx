@@ -161,42 +161,45 @@ const UdemyCourses = () => {
             </Card>
           </div>
 
-          {/* Next/Previous Buttons (Positioned on sides) */}
-          <button 
-            onClick={prevSlide}
-            className="absolute -left-12 top-1/2 -translate-y-1/2 bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-20 hover:scale-110"
-            disabled={isAnimating}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          
-          <button 
-            onClick={nextSlide}
-            className="absolute -right-12 top-1/2 -translate-y-1/2 bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-20 hover:scale-110"
-            disabled={isAnimating}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
         </div>
 
         {/* Slider indicator dots */}
         <div className="flex justify-center space-x-3 mt-6">
-          {courses.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => directSelect(idx)}
-              className={`h-2 w-10 rounded-full transition-all duration-300 ${
-                idx === activeIndex 
-                  ? 'bg-cyan-500 scale-110 shadow-sm shadow-cyan-500/50' 
-                  : 'bg-slate-700 hover:bg-slate-600'
-              }`}
+          <div>
+            {courses.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => directSelect(idx)}
+                className={`h-2 w-10 rounded-full transition-all duration-300 ${
+                  idx === activeIndex 
+                    ? 'bg-cyan-500 scale-110 shadow-sm shadow-cyan-500/50' 
+                    : 'bg-slate-700 hover:bg-slate-600'
+                }`}
+                disabled={isAnimating}
+              />
+            ))}
+          </div>
+           <div>
+            <button 
+              onClick={prevSlide}
+              className="absolute left-5 -bottom-6 -translate-y-1/2 bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-20 hover:scale-110"
               disabled={isAnimating}
-            />
-          ))}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            
+            <button 
+              onClick={nextSlide}
+              className="absolute right-5 -bottom-6 -translate-y-1/2 bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-20 hover:scale-110"
+              disabled={isAnimating}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+           </div>
         </div>
       </Container>
 

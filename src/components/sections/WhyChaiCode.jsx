@@ -114,17 +114,12 @@ const WhyChaiCode = () => {
                 <p className="text-text-secondary text-sm mb-4">
                   Project based courses with peer learning and bouties with many activities
                 </p>
-                
-                {/* <div className="flex justify-center space-x-3">
-                  <div className="w-8 h-8 bg-slate-700 rounded-md"></div>
-                  <div className="w-8 h-8 bg-slate-700 rounded-md"></div>
-                  <div className="w-8 h-8 bg-slate-700 rounded-md"></div>
-                </div> */}
+              
               </div>
             </Card>
           </div>
           
-          {/* Right column - last 3 features */}
+          
           <div className="flex flex-col space-y-6">
             <FeatureBox 
               title={features[1].title}
@@ -144,10 +139,6 @@ const WhyChaiCode = () => {
               icon={features[5].icon}
             />
           </div>
-        </div>
-        
-        <div className="flex justify-center mt-8">
-          <Button variant="secondary">Join Cohorts Live Classes</Button>
         </div>
       </Container>
     </section>

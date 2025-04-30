@@ -53,9 +53,11 @@ const TweetLove = () => {
           ))}
         </div>
       
+        <a href='/#cohorts'>
         <div className="flex justify-center mt-10">
           <Button variant="secondary">Join Cohorts Live Classes</Button>
         </div>
+        </a>
       </Container>
     </section>
   );

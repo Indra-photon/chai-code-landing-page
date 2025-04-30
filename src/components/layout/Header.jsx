@@ -106,6 +106,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-3 pb-4 bg-black/80 backdrop-blur-md rounded-lg mt-2" id="mobile-menu">
+            
             <div className="flex flex-col space-y-2 px-2">
               {navigation.map((item) => (
                 <NavLink 

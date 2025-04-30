@@ -56,7 +56,7 @@ const FreeAPI = () => {
             </ul>
             
             <a 
-              href="https://documenter.getpostman.com/view/10808728/SzS8rjbc"
+              href="https://docs.chaicode.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-4"
