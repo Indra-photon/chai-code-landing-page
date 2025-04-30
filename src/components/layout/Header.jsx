@@ -84,7 +84,7 @@ const Header = () => {
           <div className="md:hidden flex items-center">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-amber hover:text-white focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-cyan-300 hover:text-white focus:outline-none"
               aria-controls="mobile-menu"
               aria-expanded={isMenuOpen}
               onClick={() => setIsMenuOpen(!isMenuOpen)}

@@ -15,6 +15,7 @@ import FreeAPI from './components/sections/FreeAPI'
 import MobileAppSection from './components/sections/MobileAppSection'
 import Footer from './components/layout/Footer'
 import CommunityShowcase from '../src/CommunityShowcase/CommunityShowcase'
+import YouTubeChannelsSection from './components/sections/YouTubeChannelsSection'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <TopicsCloud />
       <Community />
       <FreeAPI />
+      <YouTubeChannelsSection />
       <MobileAppSection />
       <Footer />
     </>

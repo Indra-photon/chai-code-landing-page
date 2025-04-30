@@ -185,7 +185,7 @@ const WhyChaiCode = () => {
             But Why ChaiCode ?
           </h2>
           
-          <div className="relative h-1 w-1/3 mx-auto mb-6">
+          <div className="relative h-1 w-full sm:w-1/2 mx-auto mb-6">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm"></div>
           </div>
