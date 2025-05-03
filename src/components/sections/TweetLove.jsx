@@ -34,9 +34,9 @@ const TweetLove = () => {
       
       <Container className="relative z-10">
         <div className="flex flex-col items-center text-center mb-12 before:absolute before:inset-0 before:bg-gradient-to-r 
-      before:from-transparent before:via-cyan-500/20 before:to-transparent
-      before:opacity-0 hover:before:opacity-100
-      before:transition-opacity before:duration-300">
+              before:from-transparent before:via-cyan-500/20 before:to-transparent
+              before:opacity-0 hover:before:opacity-100
+              before:transition-opacity before:duration-300">
           <h2 className="section-heading mb-4">Tweet Love</h2>
           <div className="relative h-1 w-1/4 mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>

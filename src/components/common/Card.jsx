@@ -6,7 +6,7 @@ const Card = ({ children, className = '', onClick, hover = true }) => {
       className={`bg-slate-800 border border-slate-700 rounded-xl p-6 
       relative overflow-hidden
       ${hover ? 'transition-all duration-300 group' : ''}
-      ${hover ? 'hover:scale-[1.02] hover:shadow-lg' : ''}
+      ${hover ? 'hover:shadow-lg' : ''}
       ${onClick ? 'cursor-pointer' : ''}
       before:absolute before:inset-0 before:bg-gradient-to-r 
       before:from-transparent before:via-cyan-500/20 before:to-transparent
